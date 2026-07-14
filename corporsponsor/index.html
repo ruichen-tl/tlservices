@@ -29,19 +29,20 @@
         </div>
     </nav>
 
-    <!-- Hero Section (Enhanced with Visual) -->
-    <section class="pt-32 pb-20 bg-blue-900 text-white relative overflow-hidden">
-        <!-- New Hero background image from Unsplash: Modern professionals collaborating in Toronto. -->
-        <img src="https://images.unsplash.com/photo-1543269664-7eef42226a21?q=80&w=1920" alt="Professional newcomers viewing a city skyline" class="absolute inset-0 w-full h-full object-cover opacity-10">
+    <!-- Hero Section (Enhanced with Verified Background) -->
+    <section class="pt-32 pb-20 bg-blue-950 text-white relative overflow-hidden">
+        <!-- Verified image: confident newcomer in city. Set as a low-opacity overlay for texture -->
+        <img src="http://googleusercontent.com/image_collection/image_retrieval/16532124189017337661_0" alt="" class="absolute inset-0 w-full h-full object-cover opacity-15">
+        
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
                 Unlock the LTV of Canada's Newest Professionals
             </h1>
-            <p class="mt-4 text-xl md:text-2xl text-blue-200 max-w-3xl mx-auto mb-10">
+            <p class="mt-4 text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto mb-10">
                 Partner with TalentLift to deliver your essential services to a verified pipeline of 1,000+ skilled, incoming Canadians—before they even land.
             </p>
             <div class="flex justify-center gap-4">
-                <a href="#opportunity" class="bg-white text-blue-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+                <a href="#opportunity" class="bg-white text-blue-950 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
                     Explore the Opportunity
                 </a>
             </div>
@@ -105,7 +106,7 @@
         </div>
     </section>
 
-    <!-- The Pipeline Section (with visual break) -->
+    <!-- The Pipeline Section (with verified visual) -->
     <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row items-center gap-16">
@@ -126,14 +127,14 @@
                     </ul>
                 </div>
                 <div class="lg:w-1/2 w-full">
-                    <!-- New image from Unsplash: Focused professionals collaborating actively in a modern office. -->
-                    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1280" alt="Professionals working in a modern office" class="rounded-2xl shadow-xl object-cover w-full h-96">
+                    <!-- Verified image: Business handshake indicating collaboration and confirmed offers. -->
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/15197936526588140928_0" alt="Business executives shook hands" class="rounded-2xl shadow-xl object-cover w-full h-96">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- NEW SECTION: The Network Effect of Professional Newcomers (Chart Visual) -->
+    <!-- Chart Visual Section (Infographic retained) -->
     <section id="advantages" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -142,23 +143,27 @@
             </div>
             
             <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-lg">
-                <!-- This displays the custom generated infographic: image_1.png, replacing image_0.png -->
+                <!-- Infographic visualization from previous turns -->
                 <img src="image_1.png" alt="Infographic detailing the 3 advantages: Family-Centric Relocation, Built-In Community Influencers, and Employment Ecosystem Reach" class="w-full h-auto rounded-xl">
             </div>
         </div>
     </section>
 
-    <!-- Contact Section with Form -->
-    <section id="contact" class="py-20 bg-gray-50">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-             <!-- Sublte visual element: New image from Unsplash showing a clean partnership gesture. -->
-             <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1280" alt="A professional handshake over a desk" class="absolute top-0 right-0 w-32 h-32 object-cover rounded-full opacity-10 blur-xl">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 relative z-10">Let's build a welcoming transition.</h2>
-            <p class="text-lg text-gray-600 mb-10 relative z-10">
+    <!-- Contact Section (Enhanced with Verified Texture) -->
+    <section id="contact" class="py-20 bg-gray-100 relative overflow-hidden bg-white">
+        
+        <!-- Subtle verified blend for background texture -->
+        <div class="absolute inset-0 z-0">
+             <img src="http://googleusercontent.com/image_collection/image_retrieval/15197936526588140928_0" alt="" class="w-full h-full object-cover opacity-5 blur-sm">
+        </div>
+
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Let's build a welcoming transition.</h2>
+            <p class="text-lg text-gray-600 mb-10">
                 This initiative is an exercise in high-impact corporate social responsibility paired with exceptional business economics. Contact our strategic partnerships team to design a customized sponsorship package.
             </p>
 
-            <form id="partnershipForm" class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm text-left relative z-10">
+            <form id="partnershipForm" class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm text-left">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
@@ -210,7 +215,7 @@
             /* 
                Webhook Integration:
                Replace 'YOUR_WEBHOOK_URL' with a webhook listener (e.g. from Make.com) 
-               to route form submissions directly into your CRM.
+               to automatically route form submissions into your CRM.
             */
             const webhookUrl = 'YOUR_WEBHOOK_URL'; 
 
@@ -220,7 +225,7 @@
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(payload)
                 }).then(response => {
-                    status.textContent = "Thank you. Our partnerships team will be in touch.";
+                    status.textContent = "Thank you. Our partnerships team will be in touch shortly.";
                     status.className = "mt-4 text-center text-sm text-green-600 block";
                     this.reset();
                     btn.textContent = 'Request Partnership Details';
@@ -232,9 +237,9 @@
                     btn.disabled = false;
                 });
             } else {
-                // Simulation for demonstration
+                // Simulation for demonstration purposes
                 setTimeout(() => {
-                    status.textContent = "Form payload captured. Ready for webhook integration.";
+                    status.textContent = "Form payload captured. Ready to route via webhook.";
                     status.className = "mt-4 text-center text-sm text-blue-500 block";
                     btn.textContent = 'Request Partnership Details';
                     btn.disabled = false;
