@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office & Talent Solutions by TalentLift</title>
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#F9FAFB', /* Light Gray */
+                            card: '#FFFFFF', /* White */
+                            accent: '#059669', /* Emerald */
+                            action: '#4F46E5', /* Indigo */
+                            text: '#111827' /* Almost Black */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #F3F4F6; }
+        ::-webkit-scrollbar-thumb { background: #D1D5DB; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #9CA3AF; }
+    </style>
+</head>
+<body class="bg-brand-bg text-gray-600 font-sans antialiased">
+
+    <!-- Global Navigation -->
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <span class="text-xl font-extrabold text-brand-text tracking-tight">
+                    OFFICE <span class="text-brand-accent">& TALENT</span>
+                </span>
+                <span class="hidden md:inline-block px-2.5 py-0.5 rounded text-xs font-semibold bg-gray-100 text-gray-600 border border-gray-200">
+                    by TalentLift
+                </span>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-gray-600">
+                <a href="#problem" class="hover:text-brand-accent transition-colors">The Problem</a>
+                <a href="#process" class="hover:text-brand-accent transition-colors">How We Help</a>
+                <a href="#talent" class="hover:text-brand-accent transition-colors">Our Staff</a>
+                <a href="#why-us" class="hover:text-brand-accent transition-colors">Who We Are</a>
+            </nav>
+
+            <div class="hidden md:flex items-center">
+                <a href="#diagnostic-form" class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-sm font-bold text-white bg-brand-action hover:bg-indigo-700 transition-all shadow-md shadow-indigo-500/20">
+                    Start Office Review
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-600 hover:text-brand-text focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-200 px-6 py-4 space-y-3 shadow-lg">
+            <a href="#problem" class="block py-2 text-gray-600 font-medium hover:text-brand-accent">The Problem</a>
+            <a href="#process" class="block py-2 text-gray-600 font-medium hover:text-brand-accent">How We Help</a>
+            <a href="#talent" class="block py-2 text-gray-600 font-medium hover:text-brand-accent">Our Staff</a>
+            <a href="#why-us" class="block py-2 text-gray-600 font-medium hover:text-brand-accent">Who We Are</a>
+            <a href="#diagnostic-form" class="block w-full text-center py-2.5 rounded-lg text-sm font-bold text-white bg-brand-action hover:bg-indigo-700">Start Office Review</a>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="relative pt-32 pb-24 md:pt-48 md:pb-36 flex items-center justify-center overflow-hidden bg-white">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-indigo-50 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/3 left-1/3 w-[300px] h-[300px] bg-emerald-50 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-brand-text tracking-tight leading-tight mb-6">
+                Spend your time practicing law, <br class="hidden sm:inline" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-indigo-600">not chasing paperwork.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
+                We embed with your team to see what’s possible with the software you already have. Then, we provide you with a clear roadmap to streamline your operations and grow your practice.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#diagnostic-form" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold text-white bg-brand-action hover:bg-indigo-700 transition-all shadow-md shadow-indigo-500/20">
+                    Start Your Office Review
+                </a>
+                <a href="#process" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold text-gray-700 hover:text-brand-text bg-white border border-gray-300 hover:border-gray-400 transition-all shadow-sm">
+                    Learn About Our Process
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. The Problem Section -->
+    <section id="problem" class="py-20 border-t border-b border-gray-200 relative bg-brand-bg">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-sm font-bold text-brand-accent tracking-widest uppercase mb-3">The Challenge</h2>
+                <p class="text-3xl md:text-4xl font-extrabold text-brand-text tracking-tight">Your firm is too busy to grow.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- The Capacity Cap -->
+                <div class="bg-white border border-gray-200 p-8 rounded-2xl shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center mb-6 text-red-600 border border-red-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-text mb-3">The Capacity Cap</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">You have to turn away cases because your staff is bogged down by manual document review and administrative overhead.</p>
+                </div>
+                <!-- Burnout -->
+                <div class="bg-white border border-gray-200 p-8 rounded-2xl shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-orange-50 flex items-center justify-center mb-6 text-orange-600 border border-orange-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-text mb-3">Burnout</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">Your best caseworkers are exhausted by repetitive administrative tasks and chasing paperwork rather than doing challenging legal work.</p>
+                </div>
+                <!-- Wasted Tools -->
+                <div class="bg-white border border-gray-200 p-8 rounded-2xl shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center mb-6 text-brand-action border border-indigo-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-text mb-3">Wasted Tools</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">You know you aren't using your software to its fullest, but figuring it out feels like a full-time job.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. The Process Section -->
+    <section id="process" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-sm font-bold text-brand-accent tracking-widest uppercase mb-3">Our Approach</h2>
+                <p class="text-3xl md:text-4xl font-extrabold text-brand-text tracking-tight">How We Simplify Your Office</p>
+                <p class="mt-4 text-lg text-gray-600">A straightforward, secure process to modernize your firm at a pace you control.</p>
+            </div>
+
+            <!-- Step 1 -->
+            <div class="flex flex-col md:flex-row items-center gap-12 mb-20">
+                <div class="w-full md:w-1/2">
+                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-emerald-100 text-brand-accent font-extrabold text-lg mb-6 border border-emerald-200">1</div>
+                    <h3 class="text-2xl font-bold text-brand-text mb-4">The 5-Day Workflow Review ($3,000)</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        We sit with your team to see exactly where your files get stuck. By the end of the week, we will identify at least one administrative "quick-win," build a working solution for it, and show you exactly what is possible with the tools you already have.
+                    </p>
+                    <div class="flex items-center space-x-3 text-sm text-brand-accent font-bold">
+                        <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>This $3,000 fee is credited entirely toward your final setup</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Team reviewing documents" class="rounded-2xl shadow-md border border-gray-200 object-cover h-64 w-full opacity-90">
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12 mb-20">
+                <div class="w-full md:w-1/2">
+                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-emerald-100 text-brand-accent font-extrabold text-lg mb-6 border border-emerald-200">2</div>
+                    <h3 class="text-2xl font-bold text-brand-text mb-4">Review Your Roadmap (Included)</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        We sit down together to review your custom roadmap. You decide which projects make sense to tackle in the upcoming quarters, and we advise on what (if any) new software you might need to accomplish your firm’s goals.
+                    </p>
+                    <div class="flex items-center space-x-3 text-sm text-brand-accent font-bold">
+                        <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>Included in the cost of your 5-Day Workflow Review</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Roadmap planning" class="rounded-2xl shadow-md border border-gray-200 object-cover h-64 w-full opacity-90">
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-emerald-100 text-brand-accent font-extrabold text-lg mb-6 border border-emerald-200">3</div>
+                    <h3 class="text-2xl font-bold text-brand-text mb-4">Build & Scale (Custom Pricing)</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        We execute your chosen roadmap to build a highly organized system that scales your practice. Pricing depends entirely on which parts of the roadmap you choose to implement. As part of that scale, we can also provide dedicated, pre-trained support staff to handle excess file prep.
+                    </p>
+                    <div class="flex items-center space-x-3 text-sm text-brand-accent font-bold">
+                        <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>Pay only for the specific projects you select. Initial $3000 is credited towards your project.</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Scaling operations" class="rounded-2xl shadow-md border border-gray-200 object-cover h-64 w-full opacity-90">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. The Talent Section -->
+    <section id="talent" class="py-24 border-t border-b border-gray-200 relative bg-brand-bg overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-tr from-indigo-50 via-transparent to-transparent pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-10">
+                <h2 class="text-sm font-bold text-brand-accent tracking-widest uppercase mb-3">Social Impact</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-brand-text tracking-tight">Scale your practice while making a global impact.</h3>
+            </div>
+            <div class="bg-white p-10 rounded-3xl border border-gray-200 shadow-lg text-lg text-gray-700 leading-relaxed space-y-6">
+                <p>
+                    Our consulting practice operates as a social enterprise. <strong>100% of the fees you pay go directly to fueling TalentLift's mission</strong> of creating employment-based immigration pathways for displaced talent.
+                </p>
+                <p>
+                    By working with us, you are not only modernizing your firm's infrastructure, but you are actively investing in a global solution. Additionally, if your specific projects or scaled operations require human capacity, you have direct access to our network of pre-trained administrative staff to provide immediate support.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Why Us Section -->
+    <section id="why-us" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="bg-brand-bg border border-gray-200 rounded-3xl p-8 md:p-14 relative overflow-hidden shadow-sm">
+                <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-emerald-100 rounded-full blur-3xl opacity-50"></div>
+                <div class="relative z-10 max-w-3xl">
+                    <h2 class="text-sm font-bold text-brand-accent tracking-widest uppercase mb-3">Our Background</h2>
+                    <h3 class="text-2xl md:text-3xl font-extrabold text-brand-text tracking-tight mb-6">An initiative of TalentLift Canada: Built by legal professionals, for legal teams.</h3>
+                    
+                    <p class="text-gray-700 leading-relaxed text-base mb-6">
+                        This consulting service is an initiative of TalentLift Canada, a registered charity dedicated to creating employment-based immigration pathways for displaced talent. Over the years, we have built the legal and technical infrastructure required to process complex immigration files safely and at scale.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed text-base">
+                        Our leadership team is comprised of practicing lawyers and systems architects who have spent over a decade overseeing both legal outcomes and the software that delivers them. We aren't typical IT consultants. We understand the strict professional and ethical obligations of a law practice. We know that in immigration law, a missed deadline or lost document isn't just a "system error"—it's a professional liability. We organize systems designed to protect your practice, so your team can focus on your clients.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Diagnostic Form & Footer -->
+    <section id="diagnostic-form" class="py-20 bg-brand-bg border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <div>
+                    <h2 class="text-sm font-bold text-brand-accent tracking-widest uppercase mb-3">Get Started</h2>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-brand-text tracking-tight mb-6">Let's review your workflow.</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                        Book our team for a 5-Day Office Workflow Review for <strong>$3,000</strong>. We will find your administrative bottlenecks, audit your current software, and provide a clear plan to organize your files. 
+                    </p>
+                    <div class="p-6 bg-white rounded-xl border border-gray-200 shadow-sm space-y-4">
+                        <div class="flex items-center gap-3 text-sm text-gray-700 font-medium">
+                            <svg class="w-6 h-6 text-brand-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>The $3,000 fee is 100% credited toward your final setup.</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm text-gray-700 font-medium">
+                            <svg class="w-6 h-6 text-brand-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>No unfamiliar third-party software required.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Webform -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg">
+                    <form class="space-y-6" onsubmit="event.preventDefault(); alert('Request submitted! We will reach out within 24 hours to schedule a quick call.');">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">What software does your firm use?</label>
+                            <select class="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 text-sm text-brand-text focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition-all">
+                                <option>Microsoft 365 (Word, Outlook, Teams)</option>
+                                <option>Google Workspace (Docs, Gmail, Drive)</option>
+                                <option>We use something else</option>
+                            </select>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Law Firm / Clinic Name</label>
+                                <input type="text" placeholder="Your Firm Name" class="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 text-sm text-brand-text focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition-all" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Email Address</label>
+                                <input type="email" placeholder="lawyer@firm.com" class="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 text-sm text-brand-text focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition-all" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Where do you waste the most time?</label>
+                            <textarea placeholder="e.g., Chasing clients for documents, updating spreadsheets..." rows="3" class="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 text-sm text-brand-text focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition-all" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 bg-brand-action hover:bg-indigo-700 text-white font-bold rounded-xl transition-all shadow-md shadow-indigo-500/20">
+                            Start Your Office Review
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="mt-24 pt-8 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+                <p>&copy; 2026 Office & Talent Solutions by TalentLift. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-brand-text transition-colors">Confidentiality Policy</a>
+                    <a href="#" class="hover:text-brand-text transition-colors">Terms of Service</a>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <!-- Mobile Menu Handler script -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+        
+        const links = menu.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
