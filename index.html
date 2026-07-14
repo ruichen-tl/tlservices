@@ -135,21 +135,28 @@
             color: #166534;
         }
 
-        /* Prominent Disclaimer Alert Box */
-        .disclaimer {
+        /* Prominent Internal Notes Box */
+        .internal-notes {
             margin-top: 3rem;
-            background-color: #fffbeb; /* Light amber background */
-            border: 1px solid #f59e0b; /* Solid amber border */
+            background-color: #fffbeb; 
+            border: 1px solid #f59e0b; 
             border-radius: 12px;
             padding: 1.25rem;
-            font-size: 0.95rem;
-            color: #92400e; /* Dark amber text for contrast */
-            line-height: 1.5;
             text-align: left;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .note-block p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #92400e; 
+            line-height: 1.5;
         }
         
-        .disclaimer strong {
+        .note-block strong {
             display: flex;
             align-items: center;
             gap: 0.5rem;
@@ -168,7 +175,7 @@
         <p class="subtitle">Select a directory portal below</p>
 
         <div class="link-container">
-            <a href="corporsponsor/" class="link-card">
+            <a href="corporsponsor/" class="link-card" target="_blank" rel="noopener noreferrer">
                 <div class="card-header">
                     <h2 class="card-title">Corporate marketing sponsorships</h2>
                     <span class="badge badge-b2b">B2B</span>
@@ -176,7 +183,7 @@
                 <p class="card-desc">We sell marketing rights to our candidates that are coming to Canada. Ideal customers are banks, telcos, etc. where every newcomer needs to set up accounts. Could we get 1-3 organization reps to be interested?</p>
             </a>
 
-            <a href="cit/" class="link-card">
+            <a href="cit/" class="link-card" target="_blank" rel="noopener noreferrer">
                 <div class="card-header">
                     <h2 class="card-title">Citizenship applications</h2>
                     <span class="badge badge-b2c">B2C</span>
@@ -184,7 +191,7 @@
                 <p class="card-desc">We sell ability to apply for citizenship using our platform, with optional legal review and a donation prompt at the end. Could we get 3+/5 candidates to sign up for this service?</p>
             </a>
 
-            <a href="spon/" class="link-card">
+            <a href="spon/" class="link-card" target="_blank" rel="noopener noreferrer">
                 <div class="card-header">
                     <h2 class="card-title">Sponsorship applications</h2>
                     <span class="badge badge-b2c">B2C</span>
@@ -192,7 +199,7 @@
                 <p class="card-desc">We sell ability to apply for sponsorship using our platform, with optional legal review and a donation prompt at the end. Could we get 3+/5 candidates to sign up for this service?</p>
             </a>
 
-            <a href="tls/" class="link-card">
+            <a href="tls/" class="link-card" target="_blank" rel="noopener noreferrer">
                 <div class="card-header">
                     <h2 class="card-title">Technical consulting</h2>
                     <span class="badge badge-b2b">B2B</span>
@@ -201,9 +208,15 @@
             </a>
         </div>
 
-        <div class="disclaimer">
-            <strong>⚠️ Proof of Concept</strong>
-            Generative AI was used extensively to prepare these landing pages. They are mock ups only to gauge interest — actual services will need human-drafted and reviewed landing pages before going live.
+        <div class="internal-notes">
+            <div class="note-block">
+                <strong>⚠️ Proof of Concept</strong>
+                <p>Generative AI was used extensively to prepare these landing pages. They are mock ups only to gauge interest — actual services will need human-drafted and reviewed landing pages before going live.</p>
+            </div>
+            <div class="note-block">
+                <strong>💡 Funding Strategy</strong>
+                <p>For services 2 through 4 (Citizenship, Sponsorship, and Technical Consulting), we can approach angel investors using these mock ups to demonstrate the vision and raise the capital needed to fully build them out.</p>
+            </div>
         </div>
     </div>
 
